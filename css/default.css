@@ -44,6 +44,14 @@
       color: rgb(115, 42, 38);
     }
 
+    hr {
+      border-color: rgb(70, 89, 175);
+    }
+
+    .card-title {
+      color: rgb(115, 42, 38);
+    }
+
     /*Banner Display*/
     .main-banner {
       width: 100%;
