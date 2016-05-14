@@ -1,0 +1,310 @@
+    /*Fonts*/
+    @import url(https://fonts.googleapis.com/css?family=Lora);
+    @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+
+    body{
+      background: url(../images/fabric.png);
+    }
+    /*Main Nav*/
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-top: 0;
+      margin-bottom: 0;
+      border:none;
+      background: url(../images/fabric.png);
+    }
+
+    .navbar-right {
+      padding-top: 6%;
+      
+    }
+
+    .nav-pills a:hover{
+      background: url(../images/fabric.png);
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+    /*Headings*/
+    h3{
+      color: rgb(115, 42, 38);
+      font-family: 'Lora', serif;
+    }
+
+    h1 {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      color: rgb(115, 42, 38);
+    }
+
+    /*Banner Display*/
+    .main-banner {
+      width: 100%;
+    }
+
+    .banner-icon {
+      width:20%;
+
+    }
+
+    .banner {
+      margin-bottom: 0;
+    }
+
+    .card-img-top {
+      width:40%;
+      margin:2rem;
+    }
+
+    
+    /*Doctor Bios*/
+    .bio {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    /*Hover Effects*/
+    /* Radial Out */
+    .nav a {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    .nav a:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #2098d1;
+      border-radius: 100%;
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.7s;
+      transition-duration: 0.7s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    .nav a:hover, .nav a:focus, .nav a:active {
+      color: white;
+    }
+    .nav a:hover:before, .nav a:focus:before, .nav a:active:before {
+      -webkit-transform: scale(2);
+      transform: scale(2);
+    }
+
+
+    .bw:hover {
+      -webkit-filter: grayscale(100%);
+    }
+
+    /* Buzz */
+    @-webkit-keyframes hvr-buzz {
+      50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+      }
+
+      100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+      }
+    }
+
+    @keyframes hvr-buzz {
+      50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+      }
+
+      100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+      }
+    }
+
+    .hvr-buzz {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+      -webkit-animation-name: hvr-buzz;
+      animation-name: hvr-buzz;
+      -webkit-animation-duration: 0.15s;
+      animation-duration: 0.15s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+    }
+
+    /* Bob */
+    @-webkit-keyframes hvr-bob {
+      0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+      }
+
+      50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+      }
+
+      100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+      }
+    }
+
+    @keyframes hvr-bob {
+      0% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+      }
+
+      50% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+      }
+
+      100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+      }
+    }
+
+    @-webkit-keyframes hvr-bob-float {
+      100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+      }
+    }
+
+    @keyframes hvr-bob-float {
+      100% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+      }
+    }
+
+    .hvr-bob {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+      -webkit-animation-name: hvr-bob-float, hvr-bob;
+      animation-name: hvr-bob-float, hvr-bob;
+      -webkit-animation-duration: .3s, 1.5s;
+      animation-duration: .3s, 1.5s;
+      -webkit-animation-delay: 0s, .3s;
+      animation-delay: 0s, .3s;
+      -webkit-animation-timing-function: ease-out, ease-in-out;
+      animation-timing-function: ease-out, ease-in-out;
+      -webkit-animation-iteration-count: 1, infinite;
+      animation-iteration-count: 1, infinite;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-direction: normal, alternate;
+      animation-direction: normal, alternate;
+    }
+
+    }
+
+    /* Fade */
+    .hvr-fade {
+      display: ;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -moz-osx-font-smoothing: grayscale;
+      overflow: hidden;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: color, background-color;
+      transition-property: color, background-color;
+    }
+    .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+      
+      color: black;
+
+    }
+
+    /*icons*/
+    .as-seen-on {
+      display: inline-block;
+    }
+    .wdbj7 {
+      width:10%;
+      display: inline-block;
+    }
+
+    /*Testimonials*/
+   .carousel-caption {
+      background-color: rgba(39, 40, 34, 0.3);
+      border-radius: 7px;
+   }
+
+    /*Social media*/
+    .social {
+      width: 10%;
+    }
+    /*Footer*/
+    address {
+      color:white;
+    }
+
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+
+    .webmaster {
+      color: white;
+      background-color: rgb(85, 85, 85);
+    }
+
+
+
+
+
+
+
+    
