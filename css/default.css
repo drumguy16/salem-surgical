@@ -300,6 +300,17 @@
     border-radius: 10%;
    }
 
+   /*Patient Form Page*/
+   .new-patient {
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-bottom: 5%;
+   }
+
+   .new-patient img {
+    width: 5%;
+   }
+
    /*Location Page*/
    .location-info {
     margin-top: 5rem;
