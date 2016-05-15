@@ -294,6 +294,12 @@
     margin-bottom: 3rem;
    }
 
+   /*Financial Page*/
+   .blue-ridge {
+    width:65%;
+    border-radius: 10%;
+   }
+
     /*Social media*/
     .social {
       width: 10%;
