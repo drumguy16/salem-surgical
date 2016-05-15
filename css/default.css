@@ -328,16 +328,26 @@
       color:white;
     }
 
+
+
     footer {
-      background-color: #555;
-      color: white;
+      background: url(../images/fabric.png);
+      color: rgb(115, 42, 38);
       padding: 15px;
+    }
+
+    address {
+      color: rgb(115, 42, 38);
+    }
+
+    .facs {
+      width: 30%;
     }
 
 
     .webmaster {
-      color: white;
-      background-color: rgb(85, 85, 85);
+      color: rgb(115, 42, 38);
+      
     }
 
 
